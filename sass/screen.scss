@@ -1,0 +1,93 @@
+$greyed-color: #f8f8f8;
+$dark-color: #999;
+$container-width: 900px;
+$brand-width: 200px;
+$navbar-height: 45px;
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+body * {
+  min-width: unset !important;
+}
+
+nav {
+  border-radius: 0 !important;
+  position: absolute !important;
+  top: 0;
+  width: 100% !important;
+  min-width: $container-width + $brand-width !important;
+  height: $navbar-height !important;
+}
+
+nav .navbar-brand {
+  width: $brand-width;
+}
+
+nav .planets {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+}
+
+nav .planets {
+  min-width: $container-width !important;
+}
+
+nav .planets label {
+  color: $dark-color;
+  font-weight: normal;
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+nav .planets label input {
+  margin-right: 3px;
+}
+
+.container {
+  width: $container-width;
+}
+
+.chart-container {
+  padding-top: $navbar-height + 10px;
+  padding-bottom: $navbar-height + 10px;
+  width: $container-width !important;
+  height:100% !important;
+  margin: 0 auto !important;
+}
+
+.chart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.y-axis-label {
+  $width: 150px;
+
+  width: $width;
+  margin-top: $navbar-height + 10px;
+  margin-left: -$width / 2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: $dark-color !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: $navbar-height;
+  height: $navbar-height;
+}
+
+footer * {
+  color: $greyed-color !important;
+  text-align: right;
+}

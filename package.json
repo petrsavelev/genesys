@@ -1,0 +1,14 @@
+{
+  "name": "genesys",
+  "version": "1.0.0",
+  "description": "genesys test app",
+  "main": "js/app.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "pikus_spb",
+  "license": "ISC",
+  "dependencies": {
+    "angular-chart.js": "^1.0.0"
+  }
+}
